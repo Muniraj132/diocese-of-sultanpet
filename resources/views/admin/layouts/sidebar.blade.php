@@ -16,8 +16,9 @@
 .profile-content {
   width: min(400px , 100%);
   border-radius: 10px;
-  background-color: #8ec5fc;
-  background-image: linear-gradient(62deg, #2f6e9c 0%, #3d4647 100%);
+  background-color: #06213b;
+  background-image: linear-gradient(62deg, rgb(50 83 130)
+ 0%, #237c86 100%);
   transition-property: opacity, transform;
   transition-duration: calc(700ms);
   transition-delay: 0s;
@@ -65,7 +66,7 @@
   color: #ffd700;
 }
 .logoutsty:hover{
-  color: #007bff;
+  color: rgb(238, 197, 14);
 }
 
 .socails {
@@ -85,7 +86,7 @@
     <div class="div-center">
         <div class="profile-content">
             <div class="avatar">
-                <img src="https://img.icons8.com/?size=192&id=20751&format=png" alt="avatar" />
+                <img src="{{asset('admin')}}/img/3188383.png" style="height: 120px" alt="avatar" />
             </div>
             <div class="details">
                 <div class="profile-name">

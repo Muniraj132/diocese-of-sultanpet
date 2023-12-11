@@ -6,7 +6,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <link rel="icon" href="{{asset('admin')}}/img/leftlogo.png" type="image/x-icon" />
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  <title>@yield('title','Has Panel')</title>
+  <title> Welcome to Diocese of Sultanpet |  @yield('title')</title>
     @include('admin.layouts.header')
     @yield('header')
 

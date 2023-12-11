@@ -5,12 +5,13 @@
   }
 </style>
 
-<aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-color: #2f6e9c;">
+<aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-color: rgb(50 83 130)
+;">
     <!-- Brand Logo -->
  
     <a href="{{route('admin.home')}}" class="brand-link" style="text-align:justify; color:white;">
     <img src="{{asset('admin')}}/img/leftlogo.png" alt="HasPanel Logo" class="brand-image img-circle elevation-3" >
-     <strong class="brand-text font-weight-light" style=""> <span style="font-weight: 700;">UAC</span>&nbsp;<b>Family India</b></strong>
+     <strong class="brand-text font-weight-light" style=""> Diocese of&nbsp;<span style="font-weight: 700;">Sultanpet</span></strong>
     </a>
 
     <!-- Sidebar -->
@@ -293,7 +294,12 @@
             </a>
           </li>
 
-
+          <li class="nav-item">
+            <a href="{{ route('admin.option.contact') }}" class="nav-link @if(Request::segment(2)=="option" && Request::segment(3)=="contact") active @endif">
+              <i class="fas fa-address-book nav-icon"></i>
+              <p>{{ __('main.Contact Information') }}</p>
+            </a>
+          </li>
           {{-- <li class="nav-item has-treeview @if(Request::segment(2)=="user" ) menu-open @endif">
             <a href="{{ route('admin.user.index') }}" class="nav-link @if(Request::segment(2)=="user") active @endif">
                 <i class=" nav-icon fas fa-user"></i>
@@ -317,39 +323,39 @@
                 </li>
             </ul>
           </li> --}}
-        <li class="nav-item has-treeview @if(Request::segment(2)=="option" ) menu-open @endif">
+        {{-- <li class="nav-item has-treeview @if(Request::segment(2)=="option" ) menu-open @endif">
             <a href="{{ route('admin.option.index') }}" class="nav-link @if(Request::segment(2)=="option") active @endif">
                 <i class=" nav-icon fas fa-cog"></i>
                 <p>
                     {{ __('main.Options') }}
                 <i class="right fas fa-angle-left"></i>
               </p>
-            </a>
-            <ul class="nav nav-treeview" style="@if(Request::segment(2)=="option") display:block; @endif">
+            </a> --}}
+            {{-- <ul class="nav nav-treeview" style="@if(Request::segment(2)=="option") display:block; @endif"> --}}
                 {{-- <li class="nav-item">
                   <a href="{{ route('admin.option.index') }}" class="nav-link @if(Request::segment(2)=="option" && Request::segment(3)=="index") active @endif">
                     <ion-icon name="return-down-forward-outline"></ion-icon>
                     <p>{{ __('main.General Options') }}</p>
                   </a>
                 </li> --}}
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                   <a href="{{ route('admin.option.menu.index')}}" class="nav-link @if(Request::segment(2)=="option" && Request::segment(3)=="menu") active @endif">
                     <ion-icon name="return-down-forward-outline"></ion-icon>
                     <p>{{ __('main.Menus') }}</p>
                   </a>
-                </li>
+                </li> --}}
                 {{-- <li class="nav-item">
                   <a href="{{ route('admin.option.widget')}}" class="nav-link @if(Request::segment(2)=="option" && Request::segment(3)=="widget") active @endif">
                     <ion-icon name="return-down-forward-outline"></ion-icon>
                     <p>{{ __('main.Widgets') }}</p>
                   </a>
                 </li> --}}
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                   <a href="{{ route('admin.option.contact') }}" class="nav-link @if(Request::segment(2)=="option" && Request::segment(3)=="contact") active @endif">
                     <ion-icon name="return-down-forward-outline"></ion-icon>
                     <p>{{ __('main.Contact Information') }}</p>
                   </a>
-                </li>
+                </li> --}}
                 {{-- <li class="nav-item">
                   <a href="{{ route('admin.option.social') }}" class="nav-link @if(Request::segment(2)=="option" && Request::segment(3)=="social") active @endif">
                     <ion-icon name="return-down-forward-outline"></ion-icon>
@@ -368,8 +374,8 @@
                     <p>{{ __('main.Auto Linkers') }}</p>
                   </a>
                 </li> --}}
-            </ul>
-          </li>
+            {{-- </ul> --}}
+          {{-- </li> --}}
          
 
           <li class="nav-item">
