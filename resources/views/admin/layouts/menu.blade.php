@@ -205,7 +205,7 @@
           </li>
           <li class="nav-item has-treeview @if(Request::segment(2)=="activitie") menu-open @endif">
             <a href="{{ route('admin.activitie.index') }}" class="nav-link @if(Request::segment(2)=="activitie") active @endif">
-              <i class="fas fa-snowboarding nav-icon"></i>
+              <i class="fas fa-comment nav-icon"></i>
                 <p>
                     {{ __('main.Activities') }}
                 <i class="right fas fa-angle-left"></i>
@@ -262,18 +262,18 @@
               <p>{{ __('main.Slides') }}</p>
             </a>
           </li>
-          <li class="nav-item">
+          {{-- <li class="nav-item">
             <a href="{{ route('admin.ourteam.index') }}" class="nav-link @if(Request::segment(2)=="ourteam") active @endif">
                 <i class="fas fa-users nav-icon"></i>
               <p>{{ __('main.ourteam') }}</p>
             </a>
-          </li>
-          <li class="nav-item">
+          </li> --}}
+          {{-- <li class="nav-item">
             <a href="{{ route('admin.testimonial.index') }}" class="nav-link @if(Request::segment(2)=="testimonial") active @endif">
                  <i class="fas fa-quote-left nav-icon"></i>
               <p>{{ __('main.testimonials') }}</p>
             </a>
-          </li>
+          </li> --}}
           {{-- <li class="nav-item">
             <a href="{{ route('admin.comment.index') }}" class="nav-link @if(Request::segment(2)=="comment") active @endif">
                 <i class="fas fa-comments nav-icon"></i>
