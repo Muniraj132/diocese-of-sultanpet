@@ -115,6 +115,43 @@ $(document).ready(function () {
         $("#form").submit();
     });
 
+    $("#submitparish").click(function () {
+        const fieldIds = [
+            "category_id",
+            "parish_name",
+            "parish_priest",
+            "patron",
+            "established_year",
+            "tamil_population",
+            "malayalam_population",
+            "vicariate",
+            "address",
+            "email",
+            "phone",
+        ];
+        let isEmpty = false;
+        fieldIds.forEach(function (fieldId) {
+            if ($("#" + fieldId).val() == "") {
+                $("#" + fieldId).removeClass("is-valid");
+                $("#" + fieldId).addClass("is-invalid");
+                isEmpty = true;
+            } else if ($("#" + fieldId).val() == 0) {
+                $("#" + fieldId).removeClass("is-valid");
+                $("#" + fieldId).addClass("is-invalid");
+                isEmpty = true;
+            } else {
+                $("#" + fieldId).removeClass("is-invalid");
+                $("#" + fieldId).addClass("is-valid");
+            }
+        });
+        if (isEmpty) {
+            $("html, body").animate({ scrollTop: 0 }, 600);
+            return;
+        }
+
+        $("#form").submit();
+    });
+
     $("#submitcontact").click(function () {
         const fieldIds = ["phone", "cell", "email", "address", "map"];
         let isEmpty = false;
@@ -254,6 +291,9 @@ function validate(e) {
 
 $(function () {
     $("#content").summernote();
+    $("#history").summernote();
+    $("#social_movements").summernote();
+    $("#pious_associations").summernote();
     $(".summary").summernote();
 });
 

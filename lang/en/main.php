@@ -110,6 +110,13 @@ return [
     'ActivitiesRecycle' => 'Messages Recycle',
 
     'ourteam' => 'Our Team',
+    'diocese' => 'Diocese',
+    'priests' => 'Priests',
+    'parishes' => 'Parishes',
+    'addparishes' => 'Add Parish',
+    'editparishes' => 'Edit Parish',
+    'parisheRecycle' => 'Parish Recycle',
+    'religious' => 'Religious',
     // 'ourteams' => 'Our Teams',
     'Allteam' => 'All News letter',
     'Addteam' => 'Add Team',
@@ -338,4 +345,16 @@ return [
     'Mobile' =>'Mobile',
     'Message' =>'Message',
     'Action' =>'Action',
+
+    'parish_name' =>'Parish Name',
+    'parish_priest' =>'Parish Priest',
+    'patron' =>'Patron',
+    'established_year' =>'Established Year',
+    'tamil_population' =>'Tamil Population',
+    'malayalam_population' =>'Malayalam Population',
+    'vicariate' =>'Vicariate',
+    'history' =>'History',
+    'pious_associations' =>'Pious Associations',
+    'social_movements' =>'Social Movements',
+    'parishimage' => 'Parish Image'
 ];

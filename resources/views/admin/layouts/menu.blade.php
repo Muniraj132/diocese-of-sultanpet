@@ -227,6 +227,12 @@
             </ul>
           </li>
           <li class="nav-item">
+            <a href="{{ route('admin.parish.index') }}" class="nav-link @if(Request::segment(2)=="parish") active @endif">
+              <i class="fas fa-church nav-icon"></i>
+              <p>{{ __('main.diocese') }}</p>
+            </a>
+          </li>
+          <li class="nav-item">
             <a href="{{ route('admin.newletter.index') }}" class="nav-link @if(Request::segment(2)=="newletter") active @endif">
                 <i class="fas fa-calendar nav-icon"></i>
              <p>{{ __('main.newletter') }}</p>

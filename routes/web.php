@@ -69,6 +69,13 @@ Route::prefix('admin')->name('admin.')->middleware('isAdmin')->group(function ()
     Route::get('/ourteam/recover/{id}', [App\Http\Controllers\Admin\OurteamController::class, 'recover'])->name('ourteam.recover');
     Route::resource('/ourteam', 'App\Http\Controllers\Admin\OurteamController');
 
+    Route::get('/parish/switch', [App\Http\Controllers\Admin\ParishController::class, 'switch'])->name('parish.switch');
+    Route::get('/parish/trash', [App\Http\Controllers\Admin\ParishController::class, 'trash'])->name('parish.trash');
+    Route::get('/parish/delete/{id}', [App\Http\Controllers\Admin\ParishController::class, 'delete'])->name('parish.delete');
+    Route::get('/parish/recover/{id}', [App\Http\Controllers\Admin\ParishController::class, 'recover'])->name('parish.recover');
+    Route::resource('/parish', 'App\Http\Controllers\Admin\ParishController');
+
+
 
 
     Route::get('/page/switch', [App\Http\Controllers\Admin\PageController::class, 'switch'])->name('page.switch');
